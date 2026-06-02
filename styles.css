@@ -20,3 +20,9 @@
 .location-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
 @media(max-width:1080px){.team-grid{grid-template-columns:1fr}.services-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.locations-grid{grid-template-columns:1fr}}
 @media(max-width:800px){.services-cards{grid-template-columns:1fr}}
+
+/* Language toggle (EN/ES) */
+.topbar-actions{display:flex;align-items:center;gap:10px}
+.lang-toggle{display:inline-flex;align-items:center;justify-content:center;min-width:46px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff;font-weight:900;letter-spacing:.04em;cursor:pointer;transition:.2s ease}
+.lang-toggle:hover{background:rgba(255,255,255,.2)}
+@media(max-width:560px){.topbar-actions{justify-content:center}}
