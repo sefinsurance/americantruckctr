@@ -21,6 +21,27 @@
 @media(max-width:1080px){.team-grid{grid-template-columns:1fr}.services-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.locations-grid{grid-template-columns:1fr}}
 @media(max-width:800px){.services-cards{grid-template-columns:1fr}}
 
+/* Parts Offered */
+.parts-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.part-pill{display:inline-flex;align-items:center;padding:13px 18px;border-radius:999px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);color:#22324b;font-weight:800;font-size:.95rem;transition:.2s ease}
+.part-pill:hover{transform:translateY(-2px);border-color:var(--gold);color:var(--navy)}
+.parts-cta{display:flex;justify-content:center;margin-top:34px}
+/* Map + Hours */
+.map-hours-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:22px;margin-top:36px;align-items:stretch}
+.map-card{border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);min-height:340px;background:#fff}
+.shop-map{display:block;width:100%;height:100%;min-height:340px;border:0}
+.hours-card{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:30px}
+.hours-card h3{margin:14px 0 6px}
+.hours-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+.hours-list li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 16px;border-radius:16px;background:#f8fbff;border:1px solid #e6eef8}
+.hours-day{font-weight:800;color:#22324b}
+.hours-time{font-weight:700;color:var(--muted)}
+.hours-closed{background:#fdece8;border-color:#f6d3cd}
+.hours-closed .hours-time{color:var(--red);font-weight:800}
+.hours-note{margin:18px 0 0;color:var(--muted);font-size:.93rem}
+.hours-note a{color:var(--red);font-weight:800}
+@media(max-width:1080px){.map-hours-grid{grid-template-columns:1fr}.map-card{min-height:300px}}
+
 /* Language toggle (EN/ES) */
 .topbar-actions{display:flex;align-items:center;gap:10px}
 .lang-toggle{display:inline-flex;align-items:center;justify-content:center;min-width:46px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff;font-weight:900;letter-spacing:.04em;cursor:pointer;transition:.2s ease}
