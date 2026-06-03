@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="American Truck Center">
+  <rect width="512" height="512" rx="96" fill="#0c1d33"/>
+  <text x="256" y="290" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="150" fill="#ffffff" text-anchor="middle">ATC</text>
+  <rect x="146" y="350" width="220" height="30" rx="15" fill="#d43a38"/>
+</svg>
