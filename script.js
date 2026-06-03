@@ -17,6 +17,10 @@ tabs.forEach(t=>t.addEventListener('click',()=>{currentTab=t.dataset.service;win
   function applyLang(lang){
     document.documentElement.lang=lang;
     document.querySelectorAll('[data-es]').forEach(function(el){
+      // Safety: never overwrite an element that wraps a form control — an
+      // innerHTML swap would destroy the input/select/textarea. (data-es should
+      // sit on a leaf text element / span; this guards against regressions.)
+      if(el.querySelector&&el.querySelector('input,select,textarea,form'))return;
       if(el.__en===undefined)el.__en=el.innerHTML;
       el.innerHTML=(lang==='es')?el.getAttribute('data-es'):el.__en;
     });
